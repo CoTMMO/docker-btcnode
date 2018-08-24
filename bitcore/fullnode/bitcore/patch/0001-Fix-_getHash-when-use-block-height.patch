@@ -1,0 +1,25 @@
+From 6fffc9ed9616251dd3f75814cfb827572307ea02 Mon Sep 17 00:00:00 2001
+From: qinfengling <qinfengling@poex.io>
+Date: Tue, 3 Apr 2018 03:54:32 +0000
+Subject: [PATCH] Fix _getHash when use block height
+
+---
+ bitcore/node_modules/bitcore-node/lib/services/block/index.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/bitcore/node_modules/bitcore-node/lib/services/block/index.js b/bitcore/node_modules/bitcore-node/lib/services/block/index.js
+index 58cbd83..931358d 100644
+--- a/bitcore/node_modules/bitcore-node/lib/services/block/index.js
++++ b/bitcore/node_modules/bitcore-node/lib/services/block/index.js
+@@ -493,7 +493,7 @@ BlockService.prototype._getHash = function(blockArg, callback) {
+ 
+       callback(null, header.hash);
+     });
+-
++    return;
+   }
+ 
+   return callback(null, blockArg);
+-- 
+2.1.4
+

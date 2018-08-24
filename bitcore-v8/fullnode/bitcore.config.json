@@ -1,0 +1,71 @@
+{
+  "bitcoreNode": {
+    "pruneSpentScripts": true,
+    "chains": {
+      "BTC": {
+        "mainnet": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "13.229.179.119",
+              "port": 8333
+            }
+          ],
+          "rpc": {
+            "host": "13.229.179.119",
+            "port": 8332,
+            "username": "user",
+            "password": "password"
+          }
+        },
+        "testnet": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "13.229.179.119",
+              "port": 18333
+            }
+          ],
+          "rpc": {
+            "host": "13.229.179.119",
+            "port": 18332,
+            "username": "user",
+            "password": "password"
+          }
+        }
+      },
+      "BCH": {
+        "mainnet": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "13.251.46.158",
+              "port": 8333
+            }
+          ],
+          "rpc": {
+            "host": "13.251.46.158",
+            "port": 8332,
+            "username": "user",
+            "password": "password"
+          }
+        },
+         "testnet": {
+          "chainSource": "p2p",
+          "trustedPeers": [
+            {
+              "host": "13.251.46.158",
+              "port": 18333
+            }
+          ],
+          "rpc": {
+            "host": "13.251.46.158",
+            "port": 18332,
+            "username": "user",
+            "password": "password"
+          }
+        }
+      }
+    }
+  }
+}

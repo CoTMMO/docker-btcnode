@@ -1,0 +1,17 @@
+{
+   "description": "A full Bitcoin node build with Bitcore",
+   "license": "MIT",
+   "readme": "README.md",
+   "dependencies": {
+      "bitcore": "^5.0.0-beta.44",
+      "bitcore-lib": "^v5.0.0-beta.1",
+      "bitcore-lib-cash": "^v0.15.1",
+      "bitcore-node": "^5.0.0-beta.44",
+      "insight-api": "^5.0.0-beta.44",
+      "insight-ui": "github:poexio/insight#3629fb7",
+      "specialops": "0.0.5"
+   },
+   "devDependencies": {
+      "npm-run-all": "^4.1.2"
+   }
+}

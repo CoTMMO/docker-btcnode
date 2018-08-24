@@ -1,0 +1,26 @@
+{
+  "version": "5.0.0-beta.44",
+  "network": "testnet",
+  "port": 3001,
+  "services": [
+    "address",
+    "block",
+    "db",
+    "fee",
+    "header",
+    "mempool",
+    "p2p",
+    "timestamp",
+    "transaction",
+    "web",
+    "insight-api",
+    "insight-ui",
+    "specialops"
+  ],
+  "datadir": "/media/block_data",
+  "servicesConfig": {
+    "insight-api": {
+      "routePrefix": "api"
+    }
+  }
+}
